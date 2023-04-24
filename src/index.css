@@ -5,8 +5,8 @@
 :root {
     --primary-font: 'Space Mono', monospace;
 
+    --Strong-cyan: hsl(172, 67%, 45%);
     --Very-dark-cyan: hsl(183, 100%, 15%);
-    --focus-input: #26C2AE;
     --Dark-grayish-cyan: hsl(186, 14%, 43%);
     --Grayish-cyan: hsl(184, 14%, 56%);
     --Light-grayish-cyan: hsl(185, 41%, 84%);
@@ -34,4 +34,9 @@ input {
     display: block;
     background: url(./images/icon-dollar.svg);
     
+}
+
+.text_calculate {
+    font-size: large;
+    color: var(--Grayish-cyan);
 }
