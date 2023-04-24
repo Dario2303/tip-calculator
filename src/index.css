@@ -6,11 +6,11 @@
     --primary-font: 'Space Mono', monospace;
 
     --Very-dark-cyan: hsl(183, 100%, 15%);
+    --focus-input: #26C2AE;
     --Dark-grayish-cyan: hsl(186, 14%, 43%);
     --Grayish-cyan: hsl(184, 14%, 56%);
     --Light-grayish-cyan: hsl(185, 41%, 84%);
     --Very-light-grayish-cyan: hsl(189, 41%, 97%);
-    --White: hsl(0, 0%, 100%);
     --font-fold: 700;
 }
 
@@ -21,4 +21,17 @@
 
 body {
     background-color: var(--Light-grayish-cyan);
+}
+
+input {
+    all:unset;
+}
+
+.input_bill::before {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    background: url(./images/icon-dollar.svg);
+    
 }
