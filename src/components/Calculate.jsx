@@ -3,7 +3,7 @@ import Input from './Input';
 import Tip from './Tip';
 import peopleIcon from '../images/icon-person.svg'
 
-function Calculate({bill, setBill, people, setPeople}) {
+function Calculate({bill, setBill, people, setPeople, tip, setTip}) {
   return (
       <div className="p-8 md:pr-0 flex flex-col justify-around">
         <div className='relative'>
@@ -17,7 +17,10 @@ function Calculate({bill, setBill, people, setPeople}) {
           />
         </div>
 
-        <Tip/>
+        <Tip
+          tip={tip}
+          setTip={setTip}
+        />
 
         <div className='relative'>
           <label htmlFor="people" className='block text_calculate'>Number of People</label>

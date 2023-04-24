@@ -2,7 +2,7 @@ import React from 'react'
 import ButtonTip from './ButtonTip'
 import InputTip from './InputTip'
 
-function Tip() {
+function Tip({tip, setTip}) {
   return (
     <div>
       <p className='text_calculate'>Select Tip %</p>
@@ -12,7 +12,10 @@ function Tip() {
         <ButtonTip tip={15}>15%</ButtonTip>
         <ButtonTip tip={25}>25%</ButtonTip>
         <ButtonTip tip={50}>50%</ButtonTip>
-        <InputTip/>
+        <InputTip
+          tip={tip}
+          setTip={setTip}
+        />
       </div>
     </div>
   )
