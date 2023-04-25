@@ -2,16 +2,18 @@ import React from 'react'
 import ResultPrint from './ResultPrint'
 
 function Result({Reset, total, tipAmount}) {
+
+
   return (
     <div className='bg-[var(--Very-dark-cyan)] m-6 rounded-xl grid grid-rows-2 items-center p-4'>
       <div className='h-full flex flex-col justify-around'>
         <ResultPrint
           title={'Tip Amount'}
-          price={tipAmount.toFixed(2)}
+          price={tipAmount > 0 ? tipAmount.toFixed(2) : '-.--'}
         />
         <ResultPrint
           title={'Total'}
-          price={total.toFixed(2)}
+          price={total > 0 ? total.toFixed(2) : '-.--'}
         />
       </div>
 

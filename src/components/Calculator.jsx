@@ -16,8 +16,6 @@ function Calculator() {
   const tipNumber = parseInt(tip)
   const peopleNumber = parseInt(people)
 
-  console.log(validateValueBill)
-
   useEffect (() => {
     function validate (event, setEvent) {
       if(event === 0) {
