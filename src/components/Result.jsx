@@ -9,7 +9,7 @@ function Result({Reset, total, tipAmount}) {
       <div className='h-full flex flex-col justify-around'>
         <ResultPrint
           title={'Tip Amount'}
-          price={tipAmount > 0 ? tipAmount.toFixed(2) : '-.--'}
+          price={tipAmount > 0  ? tipAmount.toFixed(2) : '-.--'}
         />
         <ResultPrint
           title={'Total'}
