@@ -1,13 +1,13 @@
 import React from 'react'
 import ResultPrint from './ResultPrint'
 
-function Result() {
+function Result({tipAmount}) {
   return (
     <div className='bg-[var(--Very-dark-cyan)] m-6 rounded-xl grid grid-rows-2 items-center p-4'>
       <div className='h-full flex flex-col justify-around'>
         <ResultPrint
           title={'Tip Amount'}
-          price={'20'}
+          price={tipAmount.toFixed(2)}
         />
         <ResultPrint
           title={'Total'}

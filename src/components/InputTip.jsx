@@ -8,9 +8,10 @@ function InputTip({name, tip, setTip}) {
   return (
     <div className={`flex bg-[var(--Very-light-grayish-cyan)] transition-border duration-100 items-center border-solid border-2 rounded ${focusInput ? 'border-[var(--Strong-cyan)]' : 'border-transparent'}`}>
         <input type="number" min='0' id={name}
+                placeholder='custom'
                 value={tip}
                 onChange={e => setTip(e.target.value)}
-                className="w-full text-right"
+                className="w-full text-right uppercase"
                 onFocus={() => !focusInput && setFocusInput(true)}
                 onBlur={() => focusInput && setFocusInput(false)}
         /> 

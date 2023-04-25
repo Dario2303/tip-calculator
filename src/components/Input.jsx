@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-function Input({name, image, value, setValue}) {
+function Input({step, name, image, value, setValue}) {
 
   const [focusInput, setFocusInput] = useState(false)
   
@@ -13,6 +13,8 @@ function Input({name, image, value, setValue}) {
         </div>
         <input id={name}
                 type='number'
+                required
+                step={step}
                 min='0'
                 value={value}
                 onChange={e => setValue(e.target.value)}

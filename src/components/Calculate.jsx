@@ -10,6 +10,7 @@ function Calculate({bill, setBill, people, setPeople, tip, setTip}) {
           <label htmlFor="tip" className='block text_calculate'>Bill</label>
           <p className='absolute top-0 right-0 text-red-600 text-xs'>Can't be zero</p>
           <Input
+              step={'0.01'}
               name={'tip'}
               image={dollar}
               value={bill}
