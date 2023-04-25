@@ -10,7 +10,7 @@ function Calculate({validateValuePeople, validateValueBill, bill, setBill, peopl
       <div className="p-8 md:pr-0 flex flex-col justify-around">
         <div className='relative'>
           <label htmlFor="tip" className='block text_calculate'>Bill</label>
-          {validateValueBill && <p className='absolute top-0 right-0 text-red-600 text-xs'>Can't be zero</p>}
+          {validateValueBill && <p className='absolute top-0 right-0 text-red-600 md:text-xs text-[14px]'>Can't be zero</p>}
           <Input
               step={'0.01'}
               name={'tip'}
@@ -28,7 +28,7 @@ function Calculate({validateValuePeople, validateValueBill, bill, setBill, peopl
 
         <div className='relative'>
           <label htmlFor="people" className='block text_calculate'>Number of People</label>
-          {validateValuePeople && <p className='absolute top-0 right-0 text-red-600 text-xs'>Can't be zero</p>}
+          {validateValuePeople && <p className='absolute top-0 right-0 text-red-600 md:text-xs text-[14px]'>Can't be zero</p>}
           <Input
               name={'people'}
               image={peopleIcon}

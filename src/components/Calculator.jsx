@@ -48,7 +48,6 @@ function Calculator() {
     setPeople('')
   }
 
-
   return (
     <div className='md:grid md:grid-cols-2 grid-cols-1 calculator bg-white rounded-2xl w-[90%] max-w-[920px] h-full md:max-h-[481px]'>
       <Calculate
