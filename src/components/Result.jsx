@@ -1,7 +1,7 @@
 import React from 'react'
 import ResultPrint from './ResultPrint'
 
-function Result({tipAmount}) {
+function Result({Reset, total, tipAmount}) {
   return (
     <div className='bg-[var(--Very-dark-cyan)] m-6 rounded-xl grid grid-rows-2 items-center p-4'>
       <div className='h-full flex flex-col justify-around'>
@@ -11,11 +11,13 @@ function Result({tipAmount}) {
         />
         <ResultPrint
           title={'Total'}
-          price={'20'}
+          price={total.toFixed(2)}
         />
       </div>
 
-      <button className="uppercase bg-[var(--Strong-cyan)] w-full rounded h-7 hover:opacity-[0.85] transition">Reset</button>
+      <button className="uppercase bg-[var(--Strong-cyan)] w-full rounded h-7 hover:opacity-[0.85] transition"
+              onClick={() => Reset()}
+      >Reset</button>
     </div>
   )
 }
